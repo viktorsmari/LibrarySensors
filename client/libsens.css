@@ -1,0 +1,8 @@
+/* CSS declarations go here */
+.heatmapbox{
+  margin:20px 0px;
+  border-radius:15px;
+  border:1px solid #333;
+  height:300px;
+  width:300px;
+}

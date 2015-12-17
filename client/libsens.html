@@ -1,0 +1,50 @@
+<head>
+  <title>libsens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="container">
+    <div class="col-md-12">
+
+      <h1>Library sensors</h1>
+
+      {{> heatmaps}}
+
+    </div>
+  </div>
+</body>
+
+<template name="heatmaps">
+ 
+  <p>Last: </p>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default active">5min</button>
+    <button type="button" class="btn btn-default">15min</button>
+    <button type="button" class="btn btn-default">30min</button>
+    <button type="button" class="btn btn-default">1hr</button>
+    <button type="button" class="btn btn-default">3hr</button>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-default active">
+      <input type="checkbox" autocomplete="off" checked> Noise
+    </label>
+    <label class="btn btn-default">
+      <input type="checkbox" autocomplete="off"> Heat
+    </label>
+    <label class="btn btn-default">
+      <input type="checkbox" autocomplete="off"> Movement
+    </label>
+  </div>
+
+  <br>
+ 
+  <div class="heatmapbox"> </div>
+
+
+  
+</template>
